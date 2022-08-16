@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "appId": {
+            "value": "1b7f2d31-d9dc-4ad0-b32a-45363f9c66aa"
+        },
+        "appSecret": {
+            "value": "M@ya0123456789"
+        },
+        "botId": {
+            "value": "maya_bot_1"
+        },
+        "botSku": {
+            "value": "F0"
+        },
+        "newAppServicePlanName": {
+            "value": "MayaHr"
+        },
+        "newAppServicePlanSku": {
+            "value": {
+                "name": "S1",
+                "tier": "Standard",
+                "size": "S1",
+                "family": "S",
+                "capacity": 1
+            }
+        },
+        "appServicePlanLocation": {
+            "value": "eastus"
+        },
+        "existingAppServicePlan": {
+            "value": ""
+        },
+        "newWebAppName": {
+            "value": "MayaHr"
+        }
+    }
+}
