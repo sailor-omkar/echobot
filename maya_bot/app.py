@@ -63,7 +63,6 @@ BOT = MyBot()
 # Listen for incoming requests on /api/messages
 async def messages(req: Request) -> Response:
     # Main bot message handler.
-    print("hello")
     if "application/json" in req.headers["Content-Type"]:
         body = await req.json()
     else:
@@ -78,11 +77,15 @@ async def messages(req: Request) -> Response:
     return Response(status=201)
 
 
+async def handle(req: Request) -> Response:
+    return Response(text="Hello")
+
 APP = web.Application(middlewares=[aiohttp_error_middleware])
 APP.router.add_post("/api/messages", messages)
+APP.router.add_get("/api/handle", handle)
 
 if __name__ == "__main__":
     try:
-        web.run_app(APP, host="127.0.0.1", port=CONFIG.PORT)
+        web.run_app(APP, host="0.0.0.0", port=CONFIG.PORT)
     except Exception as error:
         raise error
