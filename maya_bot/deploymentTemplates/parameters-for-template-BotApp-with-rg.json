@@ -3,19 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "appId": {
-            "value": "1b7f2d31-d9dc-4ad0-b32a-45363f9c66aa"
+            "value": "ca228181-fde9-41b0-a676-f01f8cf3f822"
         },
         "appSecret": {
             "value": "M@ya0123456789"
         },
         "botId": {
-            "value": "maya_bot_1"
+            "value": "hr_bot"
         },
         "botSku": {
             "value": "F0"
         },
         "newAppServicePlanName": {
-            "value": "MayaHr"
+            "value": "hrapp"
         },
         "newAppServicePlanSku": {
             "value": {
@@ -33,7 +33,7 @@
             "value": ""
         },
         "newWebAppName": {
-            "value": "MayaHr"
+            "value": "hrapp"
         }
     }
 }
